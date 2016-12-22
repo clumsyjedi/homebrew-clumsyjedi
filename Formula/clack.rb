@@ -8,7 +8,7 @@ class Clack < Formula
   depends_on "node" => :run
 
   def install
-      system "echo PREFIX #{prefix}"
+      system "cp -rp * #{prefix}"
   end
 
   test do
